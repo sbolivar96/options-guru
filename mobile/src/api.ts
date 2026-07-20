@@ -105,7 +105,11 @@ async function get<T>(path: string, timeoutMs = 45000): Promise<T> {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
-    const res = await fetch(`${API_URL}${path}`, { signal: controller.signal });
+    const res = await fetch(`${API_URL}${path}`, {
+      signal: controller.signal,
+      // Bypass ngrok's free-tier browser-warning interstitial (harmless on other hosts).
+      headers: { "ngrok-skip-browser-warning": "true" },
+    });
     if (!res.ok) {
       let detail = `Request failed (${res.status})`;
       try {
