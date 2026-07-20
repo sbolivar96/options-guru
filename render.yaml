@@ -1,0 +1,16 @@
+# Render.com blueprint — deploys the Options Guru API for the mobile app.
+# The backend imports the analytics modules at the repo root, so the service
+# runs from the repo root and points uvicorn at backend/main.py.
+services:
+  - type: web
+    name: options-guru-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12"
+      # Optional: set your FRED key for a live risk-free rate (otherwise a constant is used)
+      - key: FRED_API_KEY
+        sync: false

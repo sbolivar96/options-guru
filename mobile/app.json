@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Options Guru",
+    "slug": "options-guru",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "optionsguru",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B0F14"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.optionsguru.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.optionsguru.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#0B0F14"
+      }
+    },
+    "plugins": ["expo-router"],
+    "extra": {
+      "router": { "origin": false },
+      "eas": { "projectId": "" }
+    }
+  }
+}

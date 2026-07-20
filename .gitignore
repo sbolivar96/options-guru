@@ -1,0 +1,30 @@
+# ── Python ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# ── Secrets / local config ──────────────────────────────
+.env
+.env.*
+!.env.example
+*.local.json
+.claude/settings.local.json
+
+# ── Node / Expo (mobile) ────────────────────────────────
+mobile/node_modules/
+mobile/.expo/
+mobile/dist/
+mobile/dist-check/
+mobile/web-build/
+mobile/ios/
+mobile/android/
+mobile/expo-env.d.ts
+
+# ── OS / editor ─────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log
