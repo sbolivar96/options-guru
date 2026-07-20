@@ -27,10 +27,17 @@
         "backgroundColor": "#0B0F14"
       }
     },
-    "plugins": ["expo-router"],
+    "plugins": [
+      "expo-router"
+    ],
     "extra": {
-      "router": { "origin": false },
-      "eas": { "projectId": "" }
-    }
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "662072e8-c7e8-4e61-ba4f-c84c6c2aa58a"
+      }
+    },
+    "owner": "sbolivar96"
   }
 }
