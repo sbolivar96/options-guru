@@ -13,7 +13,10 @@
       "ios": { "simulator": true }
     },
     "production": {
-      "autoIncrement": true
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://options-guru-api.onrender.com"
+      }
     }
   },
   "submit": {
