@@ -15,7 +15,7 @@
     "production": {
       "autoIncrement": true,
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://options-guru-api.onrender.com"
+        "EXPO_PUBLIC_API_URL": "https://purveyor-unscented-ruse.ngrok-free.dev"
       }
     }
   },
