@@ -11,11 +11,6 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: "3.12"
-      # Market data source (Tradier). Set TRADIER_TOKEN in the Render dashboard.
-      - key: TRADIER_TOKEN
-        sync: false
-      - key: TRADIER_BASE_URL
-        value: "https://sandbox.tradier.com/v1"
       # Optional: set your FRED key for a live risk-free rate (otherwise a constant is used)
       - key: FRED_API_KEY
         sync: false
